@@ -95,7 +95,8 @@
                         @foreach (var trip in pagedTrips)
                         {
                             <tr>
-                                <td>@trip.Date.ToString("yyyy-MM-dd")</td>
+                                
+                                <td>@trip.Date.ToString("d/M/yyyy")</td>
                                 <td>@trip.TripName</td>
                                 <td>@trip.City</td>
                                 <td>@trip.Country</td>
@@ -105,7 +106,6 @@
                                 <td>
                                     @if (trip.Score.HasValue)
                                     {
-                                        <span class="fw-semibold">@trip.Score.Value.ToString("0.#")</span>
                                         <span class="text-warning">@GetStars(trip.Score.Value)</span>
                                     }
                                     else

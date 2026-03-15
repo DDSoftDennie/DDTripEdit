@@ -3,6 +3,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>d8ec9453-46c4-4a2f-9aa1-bcea15baef5a</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,13 +14,5 @@
   <ItemGroup>
     <ProjectReference Include="..\DDTripEdit.Shared\DDTripEdit.Shared.csproj" />
     <ProjectReference Include="..\DDTripEdit.Client\DDTripEdit.Client.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <!-- Copy Trips.csv to output directory -->
-    <Content Include="..\Trips.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <Link>Trips.csv</Link>
-    </Content>
   </ItemGroup>
 </Project>

@@ -152,7 +152,8 @@ public sealed class TripCsvMap : ClassMap<Trip>
 {
     public TripCsvMap()
     {
-        Map(m => m.Date).Name("Date").TypeConverterOption.Format("yyyy-MM-dd");
+        //16/04/2022
+        Map(m => m.Date).Name("Date").TypeConverterOption.Format("d/M/yyyy");
         Map(m => m.TripName).Name("TripName");
         Map(m => m.City).Name("City");
         Map(m => m.Country).Name("Country");

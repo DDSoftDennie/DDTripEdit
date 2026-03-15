@@ -1,0 +1,664 @@
+Date;TripName;City;Country;Type;Score
+7/01/2022;Winterland Hasselt;Hasselt;Belgium;Christmas Market;
+9/01/2022;Winter in Bokrijk;Hasselt;Belgium;Christmas Market;
+5/02/2022;Centerparcs;De Haan;Belgium;Waterpark;
+19/02/2022;PIXEL;Brussels;Belgium;Museum;
+25/02/2022;Da Vinci Expo;Antwerp;Belgium;Expo;
+17/03/2022;Aqua Land;Cologne;Germany;Waterpark;
+16/04/2022;Paasfoor;Kortrijk;Belgium;Funfair;
+14/05/2022;Walibi;Wavre;Belgium;Themepark;
+24/05/2022;Meifoor;Bruges;Belgium;Funfair;
+14/06/2022;DJ Tiesto;Berlin;Germany;Concert;5
+15/07/2022;Regi;Bruges;Belgium;Concert;5
+20/07/2022;Edje Ska en De Pilshards;Ghent;Belgium;Concert;4,5
+20/07/2022;Praga Khan;Ghent;Belgium;Concert;5
+25/07/2022;Tilburgse Kermis;Tilburg;The Netherlands;Funfair;
+3/08/2022;Rammstein;Ostend;Belgium;Concert;5
+10/08/2022;Worlds of Fun;Kansas City;USA;Themepark;
+18/08/2022;Plopsaland;De Panne;Belgium;Themepark;
+20/08/2022;Plopsaqua;De Panne;Belgium;Waterpark;
+10/09/2022;Clouseau;Ostend;Belgium;Concert;5
+17/09/2022;Villa Aqua;Ostend;Belgium;Sauna;
+24/09/2022;Katara;Belsele;Belgium;Sauna;
+7/10/2022;Oktoberfoor;Ostend;Belgium;Funfair;
+9/10/2022;Parx D Astrrix;Paris;France;Themepark;
+20/10/2022;Oktoberfoor;Ostend;Belgium;Funfair;
+22/10/2022;Lago;Bruges;Belgium;Waterpark;
+20/11/2022;Nightwish;Antwerp;Belgium;Concert;5
+26/11/2022;Wintergloed;Bruges;Belgium;Christmas Market;
+30/11/2022;Zwembad Brigitte Becue;Ostend;Belgium;Swimming pool;
+3/12/2022;Winter in het park;Ostend;Belgium;Christmas Market;
+7/12/2022;Lago;Bruges;Belgium;Waterpark;
+10/12/2022;Katara;Belsele;Belgium;Sauna;
+14/12/2022;Lago;Bruges;Belgium;Waterpark;
+15/12/2022;Winterland;Hasselt;Belgium;Christmas Market;
+17/12/2022;Winter in het park;Ostend;Belgium;Christmas Market;
+19/12/2022;Warmathon;Bruges;Belgium;Event;
+20/12/2022;Winter in het park;Ostend;Belgium;Christmas Market;
+21/12/2022;Kerstmarkt Arras;Arras;France;Christmas Market;
+21/12/2022;Kerstmarkt Lille;Rijsel;France;Christmas Market;
+26/12/2022;Villa Aqua;Ostend;Belgium;Sauna;
+7/01/2023;Koksijde by Light;Koksijde;Belgium;Christmas Market;
+11/01/2023;Zwembad Brigitte Becue;Ostend;Belgium;Swimming pool;
+18/01/2023;Zwembad Brigitte Becue;Ostend;Belgium;Swimming pool;
+4/02/2023;Villa Aqua;Ostend;Belgium;Sauna;
+11/02/2023;Mu.Zee;Ostend;Belgium;Museum;
+28/02/2023;Bring me the horizon;Antwerp;Belgium;Concert;5
+2/03/2023;De Wereld is Klein;Varsenare;Belgium;Resto;5
+4/03/2023;Kinepolis;Ostend;Belgium;Movie Theatre;3
+4/03/2023;Sushi Oostende;Ostend;Belgium;Resto;5
+11/03/2023;FAAR;Ostend;Belgium;Event;5
+23/03/2023;Shokoladen museum;Cologne;Germany;Museum;5
+1/04/2023;Villa Aqua;Ostend;Belgium;Sauna;5
+21/04/2023;Space Needle;Seattle;USA;Monument;5
+29/04/2023;Meifoor;Bruges;Belgium;Funfair;5
+1/05/2023;Kinepolis;Ostend;Belgium;Movie Theatre;3
+1/05/2023;Sushi Oostende;Ostend;Belgium;Resto;5
+13/05/2023;Walibi;Wavre;Belgium;Themepark;5
+10/06/2023;Gistelse Dolle Dagen;Gistel;Belgium;Event;5
+22/07/2023;Gentse Feesten;Ghent;Belgium;Event;5
+26/07/2023;Tilburgse Kermis;Tilburg;The Netherlands;Funfair;5
+3/08/2023;Rammstein;Brussels;Belgium;Concert;5
+9/08/2023;Paulusfeesten;Ostend;Belgium;Event;5
+20/08/2023;Bellewaerde;Ypres;Belgium;Themepark;5
+29/08/2023;Tivoli Gardens;Copenhagen;Denmark;Themepark;5
+16/09/2023;NH Veluwe Sparrenhorst;Nunspeet;The Netherlands;Hotel Night;4
+17/09/2023;Walibi Holland;Biddinghuizen;The Netherlands;Themepark;5
+30/09/2023;Foire d' Octobre;Luik;Belgium;Funfair;5
+4/10/2023;Boektopia;Kortrijk;Belgium;Bookfair;5
+6/10/2023;Oktoberfoor;Ostend;Belgium;Funfair;3,5
+24/11/2023;Wintergloed;Bruges;Belgium;Christmas Market;4
+1/12/2023;Christmas Markets Berlin;Berlin;Germany;Christmas Market;5
+2/12/2023;Christmas Markets Berlin;Berlin;Germany;Christmas Market;5
+3/12/2023;Christmas Markets Berlin;Berlin;Germany;Christmas Market;5
+9/12/2023;Villa Aqua;Ostend;Belgium;Sauna;4
+10/12/2023;Lindemann;Antwerp;Belgium;Concert;5
+15/12/2023;Winter Oostende;Ostend;Belgium;Christmas Market;5
+21/12/2023;Music For Life;Bruges;Belgium;Event;5
+22/12/2023;Music For Life;Bruges;Belgium;Event;5
+6/01/2024;Pitta Roos;Sint-Michiels;Belgium;Resto;4
+6/01/2024;Betoging De Lijn;Bruges;Belgium;Strike;5
+6/01/2024;Lago;Bruges;Belgium;Waterpark;4
+20/01/2024;VVA Weekend;Merelbeke;Belgium;Education;5
+21/01/2024;VVA Weekend;Merelbeke;Belgium;Education;5
+23/02/2024;Le Pavilion Chang Long;Gistel;Belgium;Resto;3,5
+1/03/2024;De Wereld is Klein;Varsenare;Belgium;Resto;4
+23/03/2024;FTI slot festival Sportaleis;Antwerp;Belgium;Event;5
+4/04/2024;Oasis;De Panne;Belgium;Bar;4
+13/04/2024;Historisch Veurne;Veurne;Belgium;Event;5
+13/04/2024;Het Oog van de Storm;Veurne;Belgium;Event;5
+26/04/2024;De Wereld is Klein;Varsenare;Belgium;Resto;4
+2/05/2024;Train;Brussels;Belgium;Concert;5
+3/05/2024;Le Pavillon Chang Long;Gistel;Belgium;Resto;3,5
+5/05/2024;Rommelmarkt;De Panne;Belgium;Event;3,5
+6/05/2024;Bar des Amis;Bruges;Belgium;Bar;3
+6/05/2024;Brouwerij De Halve Maan;Bruges;Belgium;Museum;5
+6/05/2024;De Halve Maan resto;Bruges;Belgium;Resto;4
+17/05/2024;Teas & Bees;Gistel;Belgium;Bar;3
+18/05/2024;Villa Aqua;Ostend;Belgium;Sauna;4
+21/05/2024;De Wereld is Klein;Varsenare;Belgium;Resto;3,5
+26/05/2024;Blue Buddha Bar;Ostend;Belgium;Bar;4
+26/05/2024;Oostende voor Anker;Ostend;Belgium;Event;5
+26/05/2024;Best Kebab;Ostend;Belgium;Resto;3,5
+28/05/2024;Friet Sebiet;Varsenare;Belgium;Resto;4
+28/05/2024;Lago;Bruges;Belgium;Waterpark;4
+1/06/2024;t Botteltje;Ostend;Belgium;Bar;5
+1/06/2024;Pitta Mama;Ostend;Belgium;Resto;5
+2/06/2024;AAaRGh;Sint-Niklaas;Belgium;Comedy;5
+2/06/2024;Firtuur Amarillo;Sint-Niklaas;Belgium;Resto;5
+8/06/2024;China Garden;Jabbeke;Belgium;Resto;5
+10/06/2024;London Eye;London;UK;Attraction;1
+13/06/2024;Microsoft Store;London;UK;Flagship Store;4
+13/06/2024;Hamleys;London;UK;Flagship Store;5
+13/06/2024;Hard Rock Cafe Picadilly Circus;London;UK;Resto;5
+22/06/2024;Graspop - Ice Nine Kills;Dessel;Belgium;Concert;4
+22/06/2024;Graspop - While She Sleeps;Dessel;Belgium;Concert;4,5
+22/06/2024;Graspop - Architects;Dessel;Belgium;Concert;5
+22/06/2024;Graspop - Avenged Sevenfold;Dessel;Belgium;Concert;5
+22/06/2024;Graspop - Limp Bizkit;Dessel;Belgium;Concert;0,5
+22/06/2024;Graspop - Bring Me The Horizon;Dessel;Belgium;Concert;5
+22/06/2024;Graspop;Dessel;Belgium;Event;5
+26/06/2024;Arabia Steamboat Museum;Kansas City;USA;Museum;4
+26/06/2024;Pigwich;Kansas City;USA;Resto;5
+3/07/2024;La Gare;Gistel;Belgium;Bar;4
+6/07/2024;t Voske;Torhout;Belgium;Bar;4,5
+6/07/2024;De Statie;Wijnendale;Belgium;Resto;1,5
+11/07/2024;Alice Garden;Genk;Belgium;Bar;4
+12/07/2024;Abdijhoeve;Houthalen;Belgium;Resto;5
+13/07/2024;Labiomista - Bar;Genk;Belgium;Bar;3,5
+13/07/2024;Labiomista;Genk;Belgium;Museum;5
+20/07/2024;Oudenburg Zomert - Liquid Molly;Oudenburg;Belgium;Concert;4
+20/07/2024;Oudenburg Zomert - Appelblauw Zeegroen;Oudenburg;Belgium;Concert;4
+20/07/2024;Oudenburg Zomert - Les Truttes;Oudenburg;Belgium;Concert;5
+20/07/2024;Oudenburg Zomert;Oudenburg;Belgium;Event;5
+20/07/2024;Oudenburg Zomert - Pulled Chicken;Oudenburg;Belgium;Resto;4,5
+30/07/2024;Bar Maritim Hotel;Stuttgart;Germany;Resto;4
+31/07/2024;Ochs'h Willi;Stuttgart;Germany;Resto;4
+8/08/2024;TAZ - Bar;Ostend;Belgium;Bar;5
+9/08/2024;TAZ - Bar;Ostend;Belgium;Bar;5
+9/08/2024;TAZ - HAVOC;Ostend;Belgium;Event;5
+9/08/2024;TAZ - Desire;Ostend;Belgium;Event;5
+9/08/2024;AFC;Ostend;Belgium;Resto;4
+13/08/2024;Pasta La Vista;Bruges;Belgium;Resto;4,5
+14/08/2024;Paulusfeesten - Bwana;Ostend;Belgium;Concert;2,5
+14/08/2024;Paulusfeesten - Friends of Amos;Ostend;Belgium;Concert;4
+14/08/2024;Paulusfeesten - Channel Zero;Ostend;Belgium;Concert;5
+14/08/2024;Paulusfeesten;Ostend;Belgium;Event;5
+14/08/2024;Paulusfeesten - Pita Bar;Ostend;Belgium;Resto;4,5
+16/08/2024;Paulusfeesten - Greg Dela;Ostend;Belgium;Concert;2,5
+16/08/2024;Paulusfeesten - Dj Pudde;Ostend;Belgium;Concert;4
+16/08/2024;Paulusfeesten - Yves Deruyter;Ostend;Belgium;Concert;5
+16/08/2024;Paulusfeesten - Dimaro;Ostend;Belgium;Concert;1
+16/08/2024;Paulusfeesten - Abat;Ostend;Belgium;Concert;4
+16/08/2024;Paulusfeesten;Ostend;Belgium;Event;5
+16/08/2024;Paulusfeesten - Pita Bar;Ostend;Belgium;Resto;5
+22/08/2024;De Zonnegloed;Oostvleteren;Belgium;Zoo;5
+22/08/2024;Het Mysterie - Eten;Poperinge;Belgium;Resto;5
+22/08/2024;Het Mysterie;Poperinge;Belgium;Volkspelen Bar;5
+25/08/2024;Vrijillligers dag Ithaka (Boottocht);Ostend;Belgium;Event;5
+26/08/2024;Jilles;Ostend;Belgium;Resto;5
+27/08/2024;BBQ at Magnus;Malmo;Sweden;Private Party;5
+27/08/2024;A Hereford Beefstouw;Copenhagen;Denmark;Resto;4
+27/08/2024;Royal City Sightseeing;Copenhagen;Denmark;Tourism Tour;3,5
+28/08/2024;Matt Parker at CPH Dev Fest;Copenhagen;Denmark;Comedy;5
+28/08/2024;Burger Garage;Copenhagen;Denmark;Resto;4
+29/08/2024;The Linebreakers at CPH Dev Fest;Copenhagen;Denmark;Concert;5
+30/08/2024;O Learrys at CPH Airport;Copenhagen;Denmark;Resto;3,5
+7/09/2024;Smulhuisje;Gistel;Belgium;Resto;3
+10/09/2024;Dunya Doner;Bruges;Belgium;Resto;4
+13/09/2024;Schol;Ostend;Belgium;Bar;5
+13/09/2024;Pistache;Ostend;Belgium;Bar;5
+18/09/2024;The Burger Federation;Utrecht;The Netherlands;Resto;4,5
+18/09/2024;Starbucks;Utrecht;The Netherlands;Resto;4,5
+18/09/2024;Brothers in Law;Utrecht;The Netherlands;Resto;4,5
+19/09/2024;F.a.k;Utrecht;The Netherlands;Resto;3,5
+20/09/2024;Epica;Amsterdam;The Netherlands;Concert;5
+20/09/2024;KFC;Amsterdam;The Netherlands;Resto;4
+20/09/2024;Douwe Egberts Cafe;Amsterdam;The Netherlands;Resto;4,5
+20/09/2024;Brasserie Hoekenrode;Amsterdam;The Netherlands;Resto;5
+21/09/2024;Inside Beach Bar;Ostend;Belgium;Bar;4
+21/09/2024;t Hoeksje;Bredene;Belgium;Resto;5
+24/09/2024;Schol;Ostend;Belgium;Bar;5
+5/10/2024;Pistache;Ostend;Belgium;Bar;5
+5/10/2024;Twilight;Ostend;Belgium;Bar;5
+5/10/2024;Jilles;Ostend;Belgium;Resto;5
+8/10/2024;Beastie Burgers;Mechelen;Belgium;Resto;3
+9/10/2024;Sultan Kebab;Mechelen;Belgium;Resto;3,5
+14/10/2024;Oktoberfoor - Bredens Gebak;Ostend;Belgium;Resto;4
+19/10/2024;Brewdog;Brussels;Belgium;Resto;4
+22/10/2024;Kinepolis - Julie Zwijgt;Ostend;Belgium;Movie;4,5
+22/10/2024;Kinepolis;Ostend;Belgium;Movie Theatre;3,5
+23/10/2024;Schol;Ostend;Belgium;Bar;5
+23/10/2024;Oktoberfoor;Ostend;Belgium;Funfair;4
+23/10/2024;Oktoberfoor - Aqua Riesen Polyp;Ostend;Belgium;Ride;3,5
+23/10/2024;Oktoberfoor - Speedsurf;Ostend;Belgium;Ride;4,5
+24/10/2024;Cappuccino;Ostend;Belgium;Bar;4,5
+24/10/2024;Oktoberfoor - Hotye Delforge;Ostend;Belgium;Resto;4,5
+30/10/2024;Sylvere;Gistel;Belgium;Resto;4,5
+1/11/2024;MAX;Ostend;Belgium;Bar;4
+1/11/2024;Zenith Reunie - DST;Gistel;Belgium;Concert;3,5
+1/11/2024;Zenith Reunie - Pat B;Gistel;Belgium;Concert;5
+1/11/2024;Zenith Reunie - QIC;Gistel;Belgium;Concert;5
+1/11/2024;Zenith Reunie - Dark E;Gistel;Belgium;Concert;4
+1/11/2024;Zenith Reunie - Greg C;Gistel;Belgium;Concert;4,5
+1/11/2024;Zenith Reunie - Reunion Masters;Gistel;Belgium;Concert;3,5
+1/11/2024;Zenith Reunie;Gistel;Belgium;Event;5
+1/11/2024;Alibaba Pita;Ostend;Belgium;Resto;3
+3/11/2024;Hoevehotel Ter Haeghe;Gistel;Belgium;Resto;4
+7/11/2024;Shabu Experience;Ede;The Netherlands;Resto;4,5
+8/11/2024;Sauna De Heuvelrug;Veenendaal;The Netherlands;Sauna;5
+9/11/2024;De Wereld is Klein (Avond);Varsenare;Belgium;Resto;4,5
+12/11/2024;Belchicken;Bruges;Belgium;Resto;4,5
+16/11/2024;T Friethuys;Gistel;Belgium;Resto;4
+17/11/2024;Winterland;Hasselt;Belgium;Christmas Market;4,5
+18/11/2024;Schol;Ostend;Belgium;Bar;5
+23/11/2024;Seoul Club House;Antwerp;Belgium;Bar;4
+23/11/2024;Le Royal café;Antwerp;Belgium;Resto;4
+23/11/2024;The Bistro;Antwerp;Belgium;Resto;5
+23/11/2024;Sportoase Veldstraat;Antwerp;Belgium;Swimming pool;2,5
+3/12/2024;Christkindlmarkt;Munich;Germany;Christmas Market;3,5
+4/12/2024;Leipziger Weihnachtmarkt;Leipzig;Germany;Christmas Market;5
+5/12/2024;Leipziger Weihnachtmarkt;Leipzig;Germany;Christmas Market;5
+5/12/2024;Hofe am Bruhl;Leipzig;Germany;Shopping Center;4,5
+10/12/2024;De Stoepa;Bruges;Belgium;Bar;4
+10/12/2024;Dunya Doner;Bruges;Belgium;Resto;4,5
+11/12/2024;Mac Donalds;Mechelen;Belgium;Resto;3
+11/12/2024;Den Beer;Mechelen;Belgium;Resto;4
+13/12/2024;De Vleeshalle;Mechelen;Belgium;Resto;4
+14/12/2024;Hotel Serwir;Sint-Niklaas;Belgium;Hotel Night;3
+14/12/2024;Hotel Serwir Restaurant;Sint-Niklaas;Belgium;Resto;4
+15/12/2024;Waasland Shopping Center;Sint-Niklaas;Belgium;Shopping Center;4
+17/12/2024;Winter in het park;Ostend;Belgium;Christmas Market;4
+19/12/2024;Happy Garden;Ostend;Belgium;Resto;4,5
+20/12/2024;Clouseau;Antwerp;Belgium;Concert;5
+20/12/2024;Taverna Nostra;Antwerp;Belgium;Resto;4,5
+21/12/2024;Wintergloed;Bruges;Belgium;Christmas Market;5
+23/12/2024;Flavors;Ostend;Belgium;Resto;4
+26/12/2024;Winter in het park;Ostend;Belgium;Christmas Market;4
+30/12/2024;Kinepolis - Mufasa The Lion King;Ostend;Belgium;Movie;5
+30/12/2024;Kinepolis;Ostend;Belgium;Movie Theatre;4
+30/12/2024;Mr Spaghetti;Ostend;Belgium;Resto;4,5
+1/01/2025;Starbucks Centraal Station;Antwerp;Belgium;Bar;5
+4/01/2025;Winterbar Le Jardin;Oudenburg;Belgium;Bar;5
+4/01/2025;t Steedje;Oudenburg;Belgium;Bar;4
+9/01/2025;T Friethuys;Gistel;Belgium;Resto;4,5
+10/01/2025;Starbucks Sint-Pieters Station;Ghent;Belgium;Bar;5
+10/01/2025;Schol;Ostend;Belgium;Bar;5
+14/01/2025;Dunya Doner;Bruges;Belgium;Resto;5
+17/01/2025;Hotel Campanille;Ghent;Belgium;Hotel Night;4
+17/01/2025;Restaurant Campanille;Ghent;Belgium;Resto;3,5
+18/01/2025;VVA Weekend;Merelbeke;Belgium;Education;5
+18/01/2025;Hotel Campanille;Ghent;Belgium;Hotel Night;4
+19/01/2025;VVA Weekend;Merelbeke;Belgium;Education;5
+19/01/2025;T Friethuys;Gistel;Belgium;Resto;5
+23/01/2025;Starbucks Sint-Pieters Station;Ghent;Belgium;Bar;5
+25/01/2025;De Molenhoeve;Gistel;Belgium;Resto;5
+28/01/2025;Two Chairman;London;UK;Bar;2
+28/01/2025;The Westminster bar;London;UK;Bar;4
+28/01/2025;Nando's Victoria;London;UK;Resto;4
+4/02/2025;Snack Oostende;Ostend;Belgium;Resto;4
+11/02/2025;Dunya Doner;Bruges;Belgium;Resto;4,5
+15/02/2025;Centerparcs;De Haan;Belgium;Waterpark;4,5
+15/02/2025;Centerparcs - Tasty;De Haan;Belgium;Resto;5
+21/02/2025;Bar Alma;Antwerp;Belgium;Bar;3,5
+21/02/2025;Boston Burger Steak House;Antwerp;Belgium;Resto;3,5
+21/02/2025;Gamestate;Antwerp;Belgium;Arcade;4
+22/02/2025;Bar Alma;Antwerp;Belgium;Bar;3
+22/02/2025;Starbucks Centraal Station;Antwerp;Belgium;Bar;5
+22/02/2025;Manhatten Burgers;Leuven;Belgium;Resto;4
+26/02/2025;Lion's Head;Amsterdam;The Netherlands;Resto;4
+27/02/2025;Middle Eat;Amsterdam;The Netherlands;Resto;4
+1/03/2025;Starbucks Station Sloterdijk;Amsterdam;The Netherlands;Resto;5
+1/03/2025;Notre Dam;Leuven;Belgium;Resto;5
+2/03/2025;Lili's Ijs salon;Ostend;Belgium;Bar;4
+2/03/2025;Krokuskermis;Ostend;Belgium;Funfair;1
+2/03/2025;Krokuskermis - High Voltage;Ostend;Belgium;Ride;3,5
+3/03/2025;t Schuttershof;Eernegem;Belgium;Resto;5
+3/03/2025;La Gare;Gistel;Belgium;Bar;4,5
+8/03/2025;FAAR;Ostend;Belgium;Event;4,5
+8/03/2025;Belchicken;Ostend;Belgium;Resto;3
+8/03/2025;Rose Mary;Ostend;Belgium;Resto;3,5
+11/03/2025;Dunya Doner;Bruges;Belgium;Resto;4,5
+14/03/2025;Armenoville;Ostend;Belgium;Bar;4
+15/03/2025;GUM;Ghent;Belgium;Museum;4,5
+15/03/2025;O Learrys;Ghent;Belgium;Resto;4
+19/03/2025;Frituur T Zeetje;Ostend;Belgium;Resto;2,5
+19/03/2025;Schol;Ostend;Belgium;Bar;5
+19/03/2025;Pita Mama;Ostend;Belgium;Bar;4
+20/03/2025;Nando's SOHO;London;UK;Resto;3,5
+20/03/2025;The Blues Kitchen;London;UK;Resto;3,5
+22/03/2025;La Stalla;Ostend;Belgium;Resto;4
+24/03/2025;Tavern Hall;Bellevue;USA;Bar;4
+27/03/2025;Tavern Hall;Bellevue;USA;Bar;4
+27/03/2025;JOEY;Bellevue;USA;Bar;3,5
+28/03/2025;Wing Dome;Seattle;USA;Resto;4
+30/03/2025;Starbucks Brussel Zuid;Brussels;Belgium;Bar;4
+2/04/2025;Koniginnenhof;Ostend;Belgium;Bar;4
+5/04/2025;De Kroon;Gistel;Belgium;Bar;4,5
+5/04/2025;t Frietje;Gistel;Belgium;Resto;4
+14/04/2025;Waasland Shopping Center;Sint-Niklaas;Belgium;Shopping Center;4
+14/04/2025;Waasland Shopping Center - AS Adventure;Sint-Niklaas;Belgium;Shop;4
+14/04/2025;Waasland Shopping Center - FOX;Sint-Niklaas;Belgium;Shop;4,5
+14/04/2025;Waasland Shopping Center - Jack&Jones;Sint-Niklaas;Belgium;Shop;3,5
+14/04/2025;Waasland Shopping Center - JBC;Sint-Niklaas;Belgium;Shop;3,5
+14/04/2025;Waasland Shopping Center - Kruidvat;Sint-Niklaas;Belgium;Shop;2
+14/04/2025;Waasland Shopping Center - Lola Liza;Sint-Niklaas;Belgium;Shop;2,5
+14/04/2025;Waasland Shopping Center - Only & Sons;Sint-Niklaas;Belgium;Shop;3,5
+14/04/2025;Waasland Shopping Center - Pipoos;Sint-Niklaas;Belgium;Shop;2,5
+14/04/2025;Waasland Shopping Center - Standaard Boekhandel;Sint-Niklaas;Belgium;Shop;4
+14/04/2025;Waasland Shopping Center - Snipes;Sint-Niklaas;Belgium;Shop;1
+14/04/2025;Waasland Shopping Center - Entree;Sint-Niklaas;Belgium;Bar;3,5
+14/04/2025;Waasland Shopping Center - Retro;Sint-Niklaas;Belgium;Bar;3,5
+14/04/2025;Waasland Shopping Center - Burger King;Sint-Niklaas;Belgium;Resto;3,5
+16/04/2025;Maaklab;Bruges;Belgium;Maker;3,5
+16/04/2025;Euphoria Burger;Bruges;Belgium;Resto;3
+18/04/2025;Fauvisme;Ostend;Belgium;Resto;4
+19/04/2025;t Hoeksje;Bredene;Belgium;Resto;5
+20/04/2025;Mixor Kebab;Antwerp;Belgium;Resto;2,5
+20/04/2025;Hubis;Ostend;Belgium;Shop;2,5
+23/04/2025;Pizza Hut;Sint-Andries;Belgium;Resto;4,5
+24/04/2025;Panos Station;Ostend;Belgium;Resto;2,5
+24/04/2025;Fox;Ostend;Belgium;Shop;4,5
+25/04/2025;Ikea Resto;Ghent;Belgium;Resto;3,5
+26/04/2025;O Learrys;Ghent;Belgium;Resto;4,5
+1/05/2025;Rijmenants;Wuustwezel;Belgium;Shop;4
+1/05/2025;Tafelen;Driebergen;The Netherlands;Resto;4,5
+2/05/2025;Centerparcs De Kempervennen;Westerhoven;The Netherlands;Night;4
+2/05/2025;Centerparcs De Kempervennen - Grand Cafe;Westerhoven;The Netherlands;Bar;3,5
+2/05/2025;Centerparcs De Kempervennen - Family Quizz Night;Westerhoven;The Netherlands;Amusement;5
+3/05/2025;Centerparcs De Kempervennen;Westerhoven;The Netherlands;Night;4
+3/05/2025;Centerparcs De Kempervennen - Shop & Smile;Westerhoven;The Netherlands;Shop;3,5
+3/05/2025;Centerparcs De Kempervennen - Adventure Golf;Westerhoven;The Netherlands;Leisure;4
+3/05/2025;Centerparcs De Kempervennen - Aqua Mundo;Westerhoven;The Netherlands;Waterpark;5
+3/05/2025;Centerparcs De Kempervennen - Grand Cafe;Westerhoven;The Netherlands;Bar;3,5
+4/05/2025;Centerparcs De Kempervennen;Westerhoven;The Netherlands;Night;4
+4/05/2025;Centerparcs De Kempervennen - Kinderboerderij;Westerhoven;The Netherlands;Leisure;3,5
+4/05/2025;Centerparcs De Kempervennen - Aqua Mundo;Westerhoven;The Netherlands;Waterpark;5
+4/05/2025;Centerparcs De Kempervennen - Evergreens;Westerhoven;The Netherlands;Resto;3,5
+4/05/2025;Centerparcs De Kempervennen - Grabber Joe s;Westerhoven;The Netherlands;Resto;2
+4/05/2025;Centerparcs De Kempervennen - Bowling;Westerhoven;The Netherlands;Leisure;4,5
+4/05/2025;Centerparcs De Kempervennen - Arcade;Westerhoven;The Netherlands;Arcade;3,5
+5/05/2025;Centerparcs De Kempervennen;Westerhoven;The Netherlands;Night;4
+5/05/2025;Centerparcs De Kempervennen - Aqua Mundo;Westerhoven;The Netherlands;Waterpark;5
+5/05/2025;Centerparcs De Kempervennen - Frites Affair;Westerhoven;The Netherlands;Resto;3
+5/05/2025;Centerparcs De Kempervennen - Arcade;Westerhoven;The Netherlands;Arcade;3,5
+6/05/2025;McDonalds Brussel Zuid;Brussels;Belgium;Resto;3
+10/05/2025;Walibi;Wavre;Belgium;Themepark;5
+10/05/2025;Walibi - Tous en Boite;Wavre;Belgium;Ride;2,5
+10/05/2025;Walibi - Silverton;Wavre;Belgium;Ride;3
+10/05/2025;Walibi - Flash back;Wavre;Belgium;Ride;4
+10/05/2025;Walibi - Vampire;Wavre;Belgium;Ride;4
+10/05/2025;Walibi - Radja River;Wavre;Belgium;Ride;2,5
+10/05/2025;Walibi - Loup Garou;Wavre;Belgium;Ride;4,5
+10/05/2025;Walibi - Kondaa;Wavre;Belgium;Ride;5
+10/05/2025;Walibi - Tiki Waka;Wavre;Belgium;Ride;4
+13/05/2025;Meifoor - Grillhouse;Bruges;Belgium;Resto;4
+14/05/2025;Istanbul Bites;Leuven;Belgium;Resto;4
+14/05/2025;In Den Oude Tijd;Leuven;Belgium;Bar;3
+15/05/2025;Decathlon;Ostend;Belgium;Shop;4
+16/05/2025;Pizza Hut;Ostend;Belgium;Resto;4
+16/05/2025;Café Du Parc;Ostend;Belgium;Bar;3,5
+17/05/2025;Bowl-inn;De Panne;Belgium;Bar;4
+17/05/2025;Bowl-inn - Grill;De Panne;Belgium;Resto;4
+17/05/2025;Bowl-inn - Bowling;De Panne;Belgium;Leisure;4
+17/05/2025;Klimkaffee;Oudenburg;Belgium;Bar;3,5
+19/05/2025;Frituur Pier en Pol;Ostend;Belgium;Resto;2,5
+21/05/2025;Sand;Zandvoorde;Belgium;Resto;4,5
+21/05/2025;Bar Trotoir;Oudenburg;Belgium;Bar;4
+25/05/2025;Himschoot;Ghent;Belgium;Bar;4
+25/05/2025;Arboretum;Kalmthout;Belgium;Leisure;4
+26/05/2025;Standaard Boekhandel;Gistel;Belgium;Shop;4
+26/05/2025;Gelato Di Franco;Gistel;Belgium;Bar;3,5
+30/05/2025;Hubis;Ostend;Belgium;Shop;3
+30/05/2025;Zest;Ghent;Belgium;Bar;3,5
+31/05/2025;De Heihoeve;Kalmthout;Belgium;Bar;4,5
+31/05/2025;De Kalmthoutse Heide;Kalmthout;Belgium;Leisure;4
+2/06/2025;Schol;Ostend;Belgium;Bar;5
+3/06/2025;Chez Albert;Ostend;Belgium;Bar;4
+6/06/2025;Chez Albert;Ostend;Belgium;Bar;4
+7/06/2025;The Bistro;Antwerp;Belgium;Resto;4,5
+7/06/2025;Standaard Boekhandel;Antwerp;Belgium;Shop;5
+7/06/2025;Honkermuller;Antwerp;Belgium;Shop;4
+7/06/2025;Stadsfeestzaal;Antwerp;Belgium;Shopping Center;3
+7/06/2025;Panos - Station;Antwerp;Belgium;Bar;3,5
+9/06/2025;Bistro D' Abdij;Oudenburg;Belgium;Resto;5
+9/06/2025;De Crèmebolle;Oudenburg;Belgium;Bar;3
+10/06/2025;Faluche;Sint Kruis;Belgium;Resto;4
+12/06/2025;Teas & Beas;Gistel;Belgium;Bar;3,5
+17/06/2025;Wiener Prater;Vienna;Austria;Themepark;5
+17/06/2025;Wiener Prater - Gösser Eck;Vienna;Austria;Resto;1
+18/06/2025;Wiener Prater;Vienna;Austria;Themepark;5
+18/06/2025;Wiener Prater - Insider Rollercoaster;Vienna;Austria;Ride;5
+18/06/2025;Wiener Prater - Wiener Looping;Vienna;Austria;Ride;5
+18/06/2025;Wiener Prater - The King;Vienna;Austria;Ride;5
+18/06/2025;Wiener Prater - Wyld;Vienna;Austria;Resto;2,5
+19/06/2025;Türkis;Vienna;Austria;Resto;4
+20/06/2025;Telber;Vienna;Austria;Bar;5
+20/06/2025;Sorbas Kebap;Vienna;Austria;Resto;3,5
+21/06/2025;Panos - Station Berchem;Antwerp;Belgium;Bar;5
+21/06/2025;De Jachthoorn;Hoogstraten;Belgium;Resto;4
+22/06/2025;Frituur Pier en Pol;Ostend;Belgium;Resto;4
+23/06/2025;Centerparcs De Vossemeren;Lommel;Belgium;Night;5
+23/06/2025;Centerparcs De Vossemeren - Aqua Mundo;Lommel;Belgium;Waterpark;5
+23/06/2025;Centerparcs De Vossemeren - Arcade;Lommel;Belgium;Arcade;4
+23/06/2025;Centerparcs De Vossemeren - Grand Café;Lommel;Belgium;Bar;4
+23/06/2025;Centerparcs De Vossemeren - The Food Market;Lommel;Belgium;Shop;2,5
+24/06/2025;Centerparcs De Vossemeren;Lommel;Belgium;Night;5
+24/06/2025;Centerparcs De Vossemeren - Arcade;Lommel;Belgium;Arcade;4
+24/06/2025;Centerparcs De Vossemeren - Discovery Bay;Lommel;Belgium;Leisure;4
+24/06/2025;Centerparcs De Vossemeren - Grand Café;Lommel;Belgium;Bar;4
+24/06/2025;Centerparcs De Vossemeren - Aqua Mundo;Lommel;Belgium;Waterpark;4
+24/06/2025;Centerparcs De Vossemeren - The Food Market;Lommel;Belgium;Shop;4
+25/06/2025;Centerparcs De Vossemeren;Lommel;Belgium;Night;5
+25/06/2025;Centerparcs De Vossemeren - De Kinderboerderij;Lommel;Belgium;Leisure;4
+25/06/2025;Centerparcs De Vossemeren - Shop and Smile;Lommel;Belgium;Shop;3,5
+25/06/2025;Centerparcs De Vossemeren - Arcade;Lommel;Belgium;Arcade;4
+25/06/2025;Centerparcs De Vossemeren - Grand Café;Lommel;Belgium;Bar;4
+25/06/2025;Centerparcs De Vossemeren - Frites Affair;Lommel;Belgium;Resto;3
+25/06/2025;Centerparcs De Vossemeren - Aquapark;Lommel;Belgium;Leisure;4
+26/06/2025;Centerparcs De Vossemeren;Lommel;Belgium;Night;5
+26/06/2025;Centerparcs De Vossemeren - Frites Affair;Lommel;Belgium;Resto;4
+26/06/2025;Centerparcs De Vossemeren - Aqua Mundo;Lommel;Belgium;Waterpark;5
+26/06/2025;Centerparcs De Vossemeren - Nona's;Lommel;Belgium;Resto;4,5
+26/06/2025;Centerparcs De Vossemeren - Arcade;Lommel;Belgium;Arcade;5
+27/06/2025;Wijnegem Shopping Center;Wijnegem;Belgium;Shopping Center;5
+27/06/2025;Wijnegem Shopping Center - AS Adventure;Wijnegem;Belgium;Shop;4
+27/06/2025;Wijnegem Shopping Center - American Dream;Wijnegem;Belgium;Shop;4
+27/06/2025;Wijnegem Shopping Center - Boeken voordeel;Wijnegem;Belgium;Shop;5
+27/06/2025;Wijnegem Shopping Center - C&A;Wijnegem;Belgium;Shop;4
+27/06/2025;Wijnegem Shopping Center - CGS;Wijnegem;Belgium;Shop;0,5
+27/06/2025;Wijnegem Shopping Center - Celio;Wijnegem;Belgium;Shop;3,5
+27/06/2025;Wijnegem Shopping Center - Fnac;Wijnegem;Belgium;Shop;5
+27/06/2025;Wijnegem Shopping Center - Fox;Wijnegem;Belgium;Shop;5
+27/06/2025;Wijnegem Shopping Center - Hema;Wijnegem;Belgium;Shop;3
+27/06/2025;Wijnegem Shopping Center - HMV;Wijnegem;Belgium;Shop;5
+27/06/2025;Wijnegem Shopping Center - Hunkermüller;Wijnegem;Belgium;Shop;4,5
+27/06/2025;Wijnegem Shopping Center - Intimissimi;Wijnegem;Belgium;Shop;4,5
+27/06/2025;Wijnegem Shopping Center - Jack&Jones;Wijnegem;Belgium;Shop;3,5
+27/06/2025;Wijnegem Shopping Center - Lego;Wijnegem;Belgium;Shop;5
+27/06/2025;Wijnegem Shopping Center - LolaLiza;Wijnegem;Belgium;Shop;3,5
+27/06/2025;Wijnegem Shopping Center - Loqual;Wijnegem;Belgium;Shop;4,5
+27/06/2025;Wijnegem Shopping Center - Media Markt;Wijnegem;Belgium;Shop;4,5
+27/06/2025;Wijnegem Shopping Center - Nespresso;Wijnegem;Belgium;Shop;4
+27/06/2025;Wijnegem Shopping Center - Olleke Bolleke;Wijnegem;Belgium;Shop;3
+27/06/2025;Wijnegem Shopping Center - Pipoos;Wijnegem;Belgium;Shop;5
+27/06/2025;Wijnegem Shopping Center - Samsung;Wijnegem;Belgium;Shop;4,5
+27/06/2025;Wijnegem Shopping Center - SoLow;Wijnegem;Belgium;Shop;5
+27/06/2025;Wijnegem Shopping Center - Standaard Boekhandel;Wijnegem;Belgium;Shop;5
+27/06/2025;Wijnegem Shopping Center - Undiz;Wijnegem;Belgium;Shop;4
+27/06/2025;Wijnegem Shopping Center - Yatta!;Wijnegem;Belgium;Shop;3,5
+27/06/2025;Wijnegem Shopping Center - Zara;Wijnegem;Belgium;Shop;3,5
+27/06/2025;Wijnegem Shopping Center - Café Centraal;Wijnegem;Belgium;Bar;4
+27/06/2025;Wijnegem Shopping Center - Mndy's;Wijnegem;Belgium;Resto;4
+27/06/2025;Wijnegem Shopping Center - Lunch Garden;Wijnegem;Belgium;Resto;4,5
+1/07/2025;t Belfort;Diksmuide;Belgium;Resto;4,5
+2/07/2025;Rock Werchter;Werchter;Belgium;Event;5
+2/07/2025;Rock Werchter - While She Sleeps;Werchter;Belgium;Concert;5
+2/07/2025;Rock Werchter - Fontaines D.C.;Werchter;Belgium;Concert;2
+2/07/2025;Rock Werchter - London Grammar;Werchter;Belgium;Concert;3,5
+2/07/2025;Rock Werchter - Deftones;Werchter;Belgium;Concert;4,5
+2/07/2025;Rock Werchter - Linkin Park;Werchter;Belgium;Concert;5
+2/07/2025;greet Brussels Airport Zaventem;Zaventem;Belgium;Hotel Night;3
+3/07/2025;Total Energies;Waarloos;Belgium;Bar;3,5
+5/07/2025;Station Berchem - Panos;Berchem;Belgium;Bar;4
+9/07/2025;  ;Bredene;Belgium;Resto;5
+11/07/2025;Hola;Gent;Belgium;Bar;5
+11/07/2025;Vlaanderen Zingt;Ostend;Belgium;Event;4
+12/07/2025;Capri Coffee;Antwerp;Belgium;Bar;4
+13/07/2025;Ramses;Wuustwezel;Belgium;Resto;4
+14/07/2025;Capri Coffee;Antwerp;Belgium;Bar;4
+17/07/2025;Panos;Leuven;Belgium;Bar;2
+17/07/2025;Madnun Coffee;Leuven;Belgium;Bar;4
+17/07/2025;La Vignette;Leuven;Belgium;Resto;4
+21/07/2025;Tilburgse Kermis;Tilburg;The Netherlands;Funfair;5
+21/07/2025;Tilburgse Kermis - Boobytrap Hotel;Tilburg;The Netherlands;Ride;3,5
+21/07/2025;Tilburgse Kermis - Power Surge;Tilburg;The Netherlands;Ride;5
+21/07/2025;Tilburgse Kermis - Entia;Tilburg;The Netherlands;Ride;3,5
+21/07/2025;Tilburgse Kermis - Kaleidoscop;Tilburg;The Netherlands;Ride;3
+21/07/2025;Tilburgse Kermis - Haunted Mansion;Tilburg;The Netherlands;Ride;5
+21/07/2025;Tilburgse Kermis - Mexico;Tilburg;The Netherlands;Ride;3
+21/07/2025;Tilburgse Kermis - Spookhuis Nostalgische Kermis;Tilburg;The Netherlands;Ride;3
+21/07/2025;Tilburgse Kermis - Aeronout;Tilburg;The Netherlands;Ride;5
+21/07/2025;Tilburgse Kermis - Thriller;Tilburg;The Netherlands;Ride;4
+21/07/2025;Tilburgse Kermis - Fortress Tower;Tilburg;The Netherlands;Ride;5
+21/07/2025;Tilburgse Kermis - Toxic;Tilburg;The Netherlands;Ride;5
+21/07/2025;Tilburgse Kermis - Laser Pix;Tilburg;The Netherlands;Ride;3,5
+21/07/2025;Tilburgse Kermis - Rue de Paris;Tilburg;The Netherlands;Ride;3
+21/07/2025;Tilburgse Kermis - Adventure Bay;Tilburg;The Netherlands;Ride;2,5
+21/07/2025;Rodeo;Tilburg;The Netherlands;Resto;3
+24/07/2025;Relay;Ostend;Belgium;Shop;3,5
+24/07/2025;DOK Brewing Copany;Ghent;Belgium;Resto;3,5
+24/07/2025;Westcoast Wellness;Oostduinkerke;Belgium;Sauna;5
+24/07/2025;Friet Sebiet;Varsenare;Belgium;Resto;4,5
+29/07/2025;Relay;Ostend;Belgium;Shop;3,5
+1/08/2025;Ramses;Wuustwezel;Belgium;Resto;4,5
+1/08/2025;Bar Woest;Wuustwezel;Belgium;Bar;3
+3/08/2025;De Kalmthoutse Heide;Kalmthout;Belgium;Leisure;4
+5/08/2025;Pairi Daiza;Brugelette;Belgium;Zoo;5
+5/08/2025;Frituur Hazegras;Ostend;Belgium;Resto;4,5
+13/08/2025;The Guild;Kansas City;USA;Resto;4
+14/08/2025;Offkey Karaoke;Kansas City;USA;Leisure;4,5
+15/08/2025;City Barrel;Kansas City;USA;Resto;4
+15/08/2025;Kill Devil Club;Kansas City;USA;Bar;4
+21/08/2025;Chez Albert;Ostend;Belgium;Bar;3
+22/08/2025;Reflex;Ostend;Belgium;Arcade;4
+23/08/2025;Belgium Pier;Blankenberge;Belgium;Bar;3
+23/08/2025;Australian Ice;Blankenberge;Belgium;Bar;3,5
+23/08/2025;Floreal - resto;Blankenberge;Belgium;Resto;4
+24/08/2025;Relay;Ostend;Belgium;Shop;3
+24/08/2025;Chez Albert;Ostend;Belgium;Bar;3,5
+24/08/2025;NH Zuid -Resto;Amsterdam;The Netherlands;Resto;3
+25/08/2025;Bar Billie;Amsterdam;The Netherlands;Bar;3,5
+26/08/2025;Wan Shun;Amsterdam;The Netherlands;Resto;3
+27/08/2025;Titus Parilla;Amsterdam;The Netherlands;Resto;5
+28/08/2025;Station Amsterdam Centraal - Dunkin Donuts;Amsterdam;The Netherlands;Bar;3
+28/08/2025;Station Amsterdam Centraal - Relay;Amsterdam;The Netherlands;Shop;3,5
+28/08/2025;Station Amsterdam Centraal - Bruna;Amsterdam;The Netherlands;Shop;3,5
+29/08/2025;t Klavertje Vier;Wuustwezel;Belgium;Shop;4,5
+29/08/2025;Pure Pauze;Wuustwezel;Belgium;Bar;5
+29/08/2025;Het Snoepwinkeltje;Wuustwezel;Belgium;Shop;4
+1/09/2025;Cappa Docie;Ostend;Belgium;Resto;3
+2/09/2025;Brussels Airport - WH Smith;Zaventem;Belgium;Shop;4
+2/09/2025;Brussels Airport - The Gift Shop;Zaventem;Belgium;Shop;3
+2/09/2025;Brussels Airport - Leffe bar;Zaventem;Belgium;Bar;3,5
+4/09/2025;Asian Kitchen;Lillestrom;Norway;Resto;4
+6/09/2025;Bus Station Oslo - Bit Union;Oslo;Norway;Bar;2,5
+6/09/2025;Sightseeing bus;Oslo;Norway;Leisure;4,5
+6/09/2025;Oslo Airport - O Learry s;Gardermoen;Norway;Resto;4
+7/09/2025;Rijmenants;Wuustwezel;Belgium;Shop;4,5
+17/09/2025;Relay;Ostend;Belgium;Shop;3,5
+17/09/2025;Panos;Ostend;Belgium;Bar;3,5
+17/09/2025;Pitta Home;Lokeren;Belgium;Resto;4,5
+19/09/2025;Frituur Pier en Pol;Ostend;Belgium;Resto;4,5
+20/09/2025;Cirque De Soleil - Allegria;Brussels;Belgium;Event;5
+20/09/2025;Atomium - Tica bar;Brussels;Belgium;Bar;3,5
+22/09/2025;Starbucks Centraal Station;Antwerp;Belgium;Bar;5
+25/09/2025;Brasschaats Badhuis;Brasschaat;Belgium;Sauna;4
+27/09/2025;Klavertje Vier;Wuustwezel;Belgium;Shop;5
+28/09/2025;Sportoase Elshout;Brasschaat;Belgium;Waterpark;4
+28/09/2025;Frituur Bavo;Brasschaat;Belgium;Resto;5
+29/09/2025;Starbucks Centraal Station;Antwerp;Belgium;Bar;5
+2/10/2025;Aveve;St Lenaerts;Belgium;Shop;4
+3/10/2025;De Grotten van Han;Han-sur-Lesse;Belgium;Leisure;5
+3/10/2025;"D&G Friterie ""Chez Sandra""";Han-sur-Lesse;Belgium;Resto;5
+3/10/2025;Sunclass;Durbuy;Belgium;Night;4
+4/10/2025;Sunclass - Zwembad;Durbuy;Belgium;Swimming Pool;1
+4/10/2025;Sunclass - La Brasserie Du Parc;Durbuy;Belgium;Resto;4
+4/10/2025;Sunclass;Durbuy;Belgium;Night;4
+4/10/2025;Le Grand Café;Durbuy;Belgium;Resto;3,5
+5/10/2025;Euro Space Center;Transinne;Belgium;Themepark;5
+5/10/2025;Sunclass - La Brasserie Du Parc;Durbuy;Belgium;Resto;4,5
+5/10/2025;Sunclass;Durbuy;Belgium;Night;4
+6/10/2025;Leeuw van Waterloo;Braine-l'Alleud;Belgium;Museum;5
+6/10/2025;Lunchgarden;Schoten;Belgium;Resto;4,5
+10/10/2025;La Gare;Gistel;Belgium;Resto;5
+11/10/2025;Panos - Station;Ostend;Belgium;Bar;3,5
+12/10/2025;Rijmenants;Wuustwezel;Belgium;Shop;5
+13/10/2025;Starbucks Centraal Station;Antwerp;Belgium;Bar;5
+13/10/2025;Relay;Ostend;Belgium;Shop;3
+15/10/2025;Panos - Station;Ostend;Belgium;Bar;4
+15/10/2025;Pitta Home;Lokeren;Belgium;Resto;5
+15/10/2025;Café Du Parc;Ostend;Belgium;Bar;5
+18/10/2025;Ellis;Antwerp;Belgium;Resto;4,5
+18/10/2025;Panos - Station Dampoort;Ghent;Belgium;Bar;2
+23/10/2025;Relay;Ostend;Belgium;Shop;4
+23/10/2025;Chez Albert;Ostend;Belgium;Bar;5
+24/10/2025;Bibliotheek;Wuustwezel;Belgium;Culture;4
+24/10/2025;Klavertje Vier;Wuustwezel;Belgium;Shop;4,5
+26/10/2025;Boektopia;Kortrijk;Belgium;Event;5
+26/10/2025;Mr. Chicken;Kortrijk;Belgium;Resto;4
+29/10/2025;Fox;Ostend;Belgium;Shop;4
+29/10/2025;Panos - Station;Ostend;Belgium;Bar;4
+30/10/2025;Decathlon;Breda;The Netherlands;Shop;3,5
+30/10/2025;Ramses;Wuustwezel;Belgium;Resto;4
+1/11/2025;De Wildert;Zundert;The Netherlands;Swimming Pool;3,5
+1/11/2025;Tafelen;Rijsbergen;The Netherlands;Resto;5
+2/11/2025;Kinepolis;Antwerp;Belgium;;5
+2/11/2025;Kinepolis - Hoe tem je een draak;Antwerp;Belgium;;4,5
+2/11/2025;Kinepolis - Douwe Echtberts;Antwerp;Belgium;Bar;4
+2/11/2025;Kinepolis - Burger King;Antwerp;Belgium;Resto;3,5
+2/11/2025;MAS - Publiek Dakterras;Antwerp;Belgium;;4
+2/11/2025;AFAS Dome - Lounge;Antwerp;Belgium;Resto;5
+2/11/2025;Lindemann;Antwerp;Belgium;Concert;5
+4/11/2025;Kruitvat;Ostend;Belgium;Shop;3,5
+4/11/2025;HEMA;Ostend;Belgium;Shop;3,5
+4/11/2025;Schol;Ostend;Belgium;Bar;5
+4/11/2025;Lowie Frieton;Gistel;Belgium;Resto;4,5
+6/11/2025;Relay;Ostend;Belgium;Shop;3,5
+6/11/2025;Chez Albert;Ostend;Belgium;Bar;4
+6/11/2025;Relay - Sint Pieters Station;Ghent;Belgium;Shop;3,5
+6/11/2025;Delaware Future Lab 2030;Ghent;Belgium;Business;4,5
+7/11/2025;Vliegplein;Ostend;Belgium;Resto;5
+7/11/2025;De Halve Barrière;Eernegem;Belgium;Bar;3,5
+8/11/2025;Chez Albert;Ostend;Belgium;Bar;3,5
+8/11/2025;Panos - Sint Pieters Station;Ghent;Belgium;Bar;4
+8/11/2025;Fox;Ostend;Belgium;Shop;4
+10/11/2025;Vliegplein;Ostend;Belgium;Resto;2
+13/11/2025;Schol;Ostend;Belgium;Bar;5
+13/11/2025;Bibliotheek;Wuustwezel;Belgium;Culture;4
+13/11/2025;Relay;Ostend;Belgium;Shop;3
+14/11/2025;Libelle Winterfair;Mechelen;Belgium;Event;4
+14/11/2025;De Bosrand;Rijsbergen;The Netherlands;Shop;3,5
+14/11/2025;De Bosrand - Cosy Christmas;Rijsbergen;The Netherlands;Event;5
+15/11/2025;Lichtstoet;Wuustwezel;Belgium;Event;5
+16/11/2025;Rijmenants;Wuustwezel;Belgium;Shop;5
+20/11/2025;SOM Ledendag;Ghent;Belgium;Business;4
+20/11/2025;Panos - Dampoort Station;Ghent;Belgium;Bar;4
+22/11/2025;AVA;Rijkevorsel;Belgium;Shop;4
+22/11/2025;Standaard Boekhandel;Rijkevorsel;Belgium;Shop;4,5
+22/11/2025;Bel en Bo;Rijkevorsel;Belgium;Shop;4,5
+22/11/2025;E5;Rijkevorsel;Belgium;Shop;4
+22/11/2025;Action;Rijkevorsel;Belgium;Shop;4,5
+22/11/2025;Den Bistro;Rijkevorsel;Belgium;Bar;4
+22/11/2025;Friet Madam;Wuustwezel;Belgium;Resto;3,5
+24/11/2025;Brussels Airport - Panos;Zaventem;Belgium;Bar;4
+24/11/2025;Brussels Airport - Starbucks;Zaventem;Belgium;Bar;5
+24/11/2025;Christmas Market;Potsdam;Germany;Christmas Market;3,5
+28/11/2025;Crhistmas Marktets AlexanderPlatz;Berlin;Germany;Christmas Market;5
+28/11/2025;Berlin Airport - Asian Gourmet;Berlin;Germany;Resto;4
+1/12/2025;Action;Ostend;Belgium;Shop;3,5
+1/12/2025;TeDI;Ostend;Belgium;Shop;4,5
+2/12/2025;La Gare;Gistel;Belgium;Bar;4
+3/12/2025;t Smoefelgatje;Ostend;Belgium;Bar;4
+3/12/2025;Peerd en Karre;Ichtegem;Belgium;Resto;5
+6/12/2025;Lola Liza;Hoogstraten;Belgium;Shop;4
+6/12/2025;Kruitvat;Hoogstraten;Belgium;Shop;3
+6/12/2025;Standaard Boekhandel;Hoogstraten;Belgium;Shop;5
+6/12/2025;Klavertje Vier;Hoogstraten;Belgium;Shop;5
+8/12/2025;Antwerpen Centraal - Starbucks;Antwerp;Belgium;Bar;5
+10/12/2025;Relay;Ostend;Belgium;Shop;3
+10/12/2025;Mixor Kebab;Antwerp;Belgium;Resto;5
+11/12/2025;Christmas Markets;Antwerp;Belgium;Christmas Market;5
+13/12/2025;Christmas Markets;Dusseldorf;Germany;Christmas Market;5
+13/12/2025;Schwan;Dusseldorf;Germany;Bar;3
+13/12/2025;Lego;Dusseldorf;Germany;Shop;5
+13/12/2025;Snipes;Dusseldorf;Germany;Shop;3,5
+13/12/2025;Elbenwald;Dusseldorf;Germany;Shop;4
+13/12/2025;Toys and Helden;Dusseldorf;Germany;Shop;4
+13/12/2025;H&M;Dusseldorf;Germany;Shop;2,5
+13/12/2025;C&A;Dusseldorf;Germany;Shop;5
+16/12/2025;Christmas Market;Ostend;Belgium;Christmas Market;3,5
+22/12/2025;Standaard Boekhandel;Gistel;Belgium;Shop;5
+22/12/2025;Leonidas;Gistel;Belgium;Shop;3,5
+22/12/2025;Bibliotheek;Gistel;Belgium;Culture;4
+24/12/2025;Sansuniek;Gistel;Belgium;Bar;4
+26/12/2025;Internationale Kerststellen Tentoonstelling;Wuustwezel;Belgium;Event;5
+26/12/2025;Klavertje Vier;Wuustwezel;Belgium;Shop;5
+26/12/2025;Ramses;Wuustwezel;Belgium;Shop;4,5
+29/12/2025;Aazencross Veldrijden;Loenhout;Belgium;Event;5
+29/12/2025;Klavertje Vier;Wuustwezel;Belgium;Shop;5
+30/12/2025;Antwerpen Centraal - Starbucks;Antwerp;Belgium;Bar;5
+5/01/2026;Dreamland;Ostend;Belgium;Shop;5
+7/01/2026;Station Oostende - Panos;Ostend;Belgium;Bar;4
+10/01/2026;Wijnegem Shopping Center;Wijnegem;Belgium;Shopping Center;4
+10/01/2026;Wijnegem Shopping Center - Loqual;Wijnegem;Belgium;Shop;5
+10/01/2026;Wijnegem Shopping Center - H&M ;Wijnegem;Belgium;Shop;3
+10/01/2026;Wijnegem Shopping Center - JBC;Wijnegem;Belgium;Shop;1
+10/01/2026;Wijnegem Shopping Center - C&A;Wijnegem;Belgium;Shop;5
+10/01/2026;Wijnegem Shopping Center - LolaLiza;Wijnegem;Belgium;Shop;4
+10/01/2026;Wijnegem Shopping Center - Lego;Wijnegem;Belgium;Shop;3,5
+10/01/2026;Wijnegem Shopping Center - FNAC;Wijnegem;Belgium;Shop;4
+10/01/2026;Wijnegem Shopping Center - Standaard Boekhandel;Wijnegem;Belgium;Shop;4
+10/01/2026;Wijnegem Shopping Center - Lunch Garden;Wijnegem;Belgium;Resto;4,5
+10/01/2026;Wijnegem Shopping Center - Mndy's;Wijnegem;Belgium;Bar;4,5
+10/01/2026;Wijnegem Shopping Center - Hunkermüller;Wijnegem;Belgium;Shop;3
