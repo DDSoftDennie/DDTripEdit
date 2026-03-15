@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="DDTripEdit.Client/DDTripEdit.Client.csproj" />
+  <Project Path="DDTripEdit.Server/DDTripEdit.Server.csproj" />
+  <Project Path="DDTripEdit.Shared/DDTripEdit.Shared.csproj" />
+</Solution>

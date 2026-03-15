@@ -1,0 +1,26 @@
+Date;TripName;City;Country;Type;Score
+2019-03-15;Spring Break Paris;Paris;France;City Trip;4,5
+2019-07-20;Summer in Rome;Rome;Italy;City Trip;4,8
+2019-09-10;Scottish Highlands;Inverness;Scotland;Nature;4,2
+2020-02-05;Winter Vienna;Vienna;Austria;City Trip;4,6
+2020-08-15;Beach Algarve;Albufeira;Portugal;Beach;4,9
+2021-04-22;Amsterdam Tulips;Amsterdam;Netherlands;City Trip;4,3
+2021-07-10;Norwegian Fjords;Bergen;Norway;Nature;5
+2021-10-30;Halloween Prague;Prague;Czech Republic;City Trip;4,1
+2022-01-15;Winter Budapest;Budapest;Hungary;City Trip;4,4
+2022-06-20;Greek Islands;Santorini;Greece;Beach;4,7
+2022-08-05;Swiss Alps Hiking;Zermatt;Switzerland;Nature;4,8
+2022-11-25;Christmas Bruges;Bruges;Belgium;City Trip;4,5
+2023-03-10;Spring Barcelona;Barcelona;Spain;City Trip;4,6
+2023-05-18;Lisbon Exploration;Lisbon;Portugal;City Trip;4,3
+2023-07-22;Amalfi Coast;Positano;Italy;Beach;4,9
+2023-09-14;Oktoberfest Munich;Munich;Germany;Festival;4,2
+2023-11-20;Black Friday London;London;United Kingdom;City Trip;4
+2024-01-08;New Year Dublin;Dublin;Ireland;City Trip;3,8
+2024-03-29;Cherry Blossoms Tokyo;Tokyo;Japan;Nature;5
+2024-05-15;Marrakech Medina;Marrakech;Morocco;Cultural;4,4
+2024-07-04;Dubrovnik Old Town;Dubrovnik;Croatia;Beach;4,7
+2024-09-20;Fall in New York;New York;United States;City Trip;4,5
+2024-11-10;Northern Lights Tromsø;Tromsø;Norway;Nature;
+2025-02-14;Valentine Rome;Rome;Italy;City Trip;4,8
+2025-04-05;Easter Athens;Athens;Greece;Cultural;4,1

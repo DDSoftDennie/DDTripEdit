@@ -1,0 +1,388 @@
+@page "/trips"
+@inject HttpClient Http
+@inject NavigationManager Navigation
+
+<PageTitle>Trips - DDTripEdit</PageTitle>
+
+<div class="container-fluid mt-3">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2>✈️ Trips</h2>
+        <a href="/trips/add" class="btn btn-success">
+            <i class="bi bi-plus-circle me-1"></i> Add New Trip
+        </a>
+    </div>
+
+    @if (loading)
+    {
+        <div class="text-center py-5">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="mt-2 text-muted">Loading trips...</p>
+        </div>
+    }
+    else if (errorMessage != null)
+    {
+        <div class="alert alert-danger" role="alert">
+            <strong>Error:</strong> @errorMessage
+            <button class="btn btn-sm btn-outline-danger ms-2" @onclick="LoadTrips">Retry</button>
+        </div>
+    }
+    else
+    {
+        <!-- Search / Filter -->
+        <div class="row g-2 mb-3">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-search"></i></span>
+                    <input type="text" class="form-control" placeholder="Search by name, city, country, or type..."
+                           value="@searchText" @oninput="OnSearchChanged" />
+                    @if (!string.IsNullOrEmpty(searchText))
+                    {
+                        <button class="btn btn-outline-secondary" @onclick="ClearSearch">✕</button>
+                    }
+                </div>
+            </div>
+            <div class="col-md-3">
+                <select class="form-select" @bind="filterType" @bind:after="ApplyFilters">
+                    <option value="">All Types</option>
+                    @foreach (var t in allTypes)
+                    {
+                        <option value="@t">@t</option>
+                    }
+                </select>
+            </div>
+            <div class="col-md-3 text-end text-muted small pt-2">
+                Showing @filteredTrips.Count of @allTrips.Count trips
+            </div>
+        </div>
+
+        <!-- Table -->
+        <div class="table-responsive">
+            <table class="table table-striped table-hover align-middle">
+                <thead class="table-dark">
+                    <tr>
+                        <th style="cursor:pointer" @onclick='() => SortBy("Date")'>
+                            Date @SortIcon("Date")
+                        </th>
+                        <th style="cursor:pointer" @onclick='() => SortBy("TripName")'>
+                            Trip Name @SortIcon("TripName")
+                        </th>
+                        <th style="cursor:pointer" @onclick='() => SortBy("City")'>
+                            City @SortIcon("City")
+                        </th>
+                        <th style="cursor:pointer" @onclick='() => SortBy("Country")'>
+                            Country @SortIcon("Country")
+                        </th>
+                        <th style="cursor:pointer" @onclick='() => SortBy("Type")'>
+                            Type @SortIcon("Type")
+                        </th>
+                        <th style="cursor:pointer" @onclick='() => SortBy("Score")'>
+                            Score @SortIcon("Score")
+                        </th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (!pagedTrips.Any())
+                    {
+                        <tr>
+                            <td colspan="7" class="text-center text-muted py-4">No trips found.</td>
+                        </tr>
+                    }
+                    else
+                    {
+                        @foreach (var trip in pagedTrips)
+                        {
+                            <tr>
+                                <td>@trip.Date.ToString("yyyy-MM-dd")</td>
+                                <td>@trip.TripName</td>
+                                <td>@trip.City</td>
+                                <td>@trip.Country</td>
+                                <td>
+                                    <span class="badge @GetTypeBadgeClass(trip.Type)">@trip.Type</span>
+                                </td>
+                                <td>
+                                    @if (trip.Score.HasValue)
+                                    {
+                                        <span class="fw-semibold">@trip.Score.Value.ToString("0.#")</span>
+                                        <span class="text-warning">@GetStars(trip.Score.Value)</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">—</span>
+                                    }
+                                </td>
+                                <td>
+                                    <a href="/trips/edit/@trip.Id" class="btn btn-sm btn-outline-primary me-1">
+                                        <i class="bi bi-pencil"></i> Edit
+                                    </a>
+                                    <button class="btn btn-sm btn-outline-danger" @onclick="() => ConfirmDelete(trip)">
+                                        <i class="bi bi-trash"></i> Delete
+                                    </button>
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Pagination -->
+        @if (totalPages > 1)
+        {
+            <nav>
+                <ul class="pagination justify-content-center">
+                    <li class="page-item @(currentPage == 1 ? "disabled" : "")">
+                        <button class="page-link" @onclick="() => ChangePage(currentPage - 1)">‹</button>
+                    </li>
+                    @for (int p = Math.Max(1, currentPage - 2); p <= Math.Min(totalPages, currentPage + 2); p++)
+                    {
+                        var pageNum = p;
+                        <li class="page-item @(pageNum == currentPage ? "active" : "")">
+                            <button class="page-link" @onclick="() => ChangePage(pageNum)">@pageNum</button>
+                        </li>
+                    }
+                    <li class="page-item @(currentPage == totalPages ? "disabled" : "")">
+                        <button class="page-link" @onclick="() => ChangePage(currentPage + 1)">›</button>
+                    </li>
+                </ul>
+            </nav>
+        }
+    }
+</div>
+
+<!-- Delete confirmation modal -->
+@if (tripToDelete != null)
+{
+    <div class="modal fade show d-block" tabindex="-1" style="background:rgba(0,0,0,0.5)">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title">Confirm Delete</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure you want to delete <strong>@tripToDelete.TripName</strong> (@tripToDelete.City, @tripToDelete.Date.Year)?</p>
+                    <p class="text-muted small">This action cannot be undone.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" @onclick="() => tripToDelete = null" disabled="@deleting">Cancel</button>
+                    <button class="btn btn-danger" @onclick="DeleteTrip" disabled="@deleting">
+                        @if (deleting)
+                        {
+                            <span class="spinner-border spinner-border-sm me-1"></span>
+                        }
+                        Delete
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<!-- Toast notifications -->
+@if (toastMessage != null)
+{
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index:1100">
+        <div class="toast show align-items-center text-white @(toastIsError ? "bg-danger" : "bg-success") border-0" role="alert">
+            <div class="d-flex">
+                <div class="toast-body">@toastMessage</div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" @onclick="() => toastMessage = null"></button>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    private List<Trip> allTrips = [];
+    private List<Trip> filteredTrips = [];
+    private List<Trip> pagedTrips = [];
+    private List<string> allTypes = [];
+
+    private bool loading = true;
+    private string? errorMessage;
+    private string searchText = string.Empty;
+    private string filterType = string.Empty;
+
+    private string sortColumn = "Date";
+    private bool sortAscending = false;
+
+    private int currentPage = 1;
+    private const int PageSize = 25;
+    private int totalPages = 1;
+
+    private Trip? tripToDelete;
+    private bool deleting;
+
+    private string? toastMessage;
+    private bool toastIsError;
+    private System.Threading.CancellationTokenSource? toastCts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadTrips();
+    }
+
+    private async Task LoadTrips()
+    {
+        loading = true;
+        errorMessage = null;
+        try
+        {
+            allTrips = await Http.GetFromJsonAsync<List<Trip>>("api/trips") ?? [];
+            allTypes = allTrips.Select(t => t.Type).Distinct().OrderBy(t => t).ToList();
+            ApplyFilters();
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Could not load trips: {ex.Message}";
+        }
+        finally
+        {
+            loading = false;
+        }
+    }
+
+    private void OnSearchChanged(ChangeEventArgs e)
+    {
+        searchText = e.Value?.ToString() ?? string.Empty;
+        currentPage = 1;
+        ApplyFilters();
+    }
+
+    private void ClearSearch()
+    {
+        searchText = string.Empty;
+        ApplyFilters();
+    }
+
+    private void ApplyFilters()
+    {
+        var query = allTrips.AsEnumerable();
+
+        if (!string.IsNullOrWhiteSpace(searchText))
+        {
+            var lower = searchText.ToLowerInvariant();
+            query = query.Where(t =>
+                t.TripName.Contains(lower, StringComparison.OrdinalIgnoreCase) ||
+                t.City.Contains(lower, StringComparison.OrdinalIgnoreCase) ||
+                t.Country.Contains(lower, StringComparison.OrdinalIgnoreCase) ||
+                t.Type.Contains(lower, StringComparison.OrdinalIgnoreCase));
+        }
+
+        if (!string.IsNullOrEmpty(filterType))
+            query = query.Where(t => t.Type == filterType);
+
+        // Sort
+        query = sortColumn switch
+        {
+            "TripName" => sortAscending ? query.OrderBy(t => t.TripName) : query.OrderByDescending(t => t.TripName),
+            "City" => sortAscending ? query.OrderBy(t => t.City) : query.OrderByDescending(t => t.City),
+            "Country" => sortAscending ? query.OrderBy(t => t.Country) : query.OrderByDescending(t => t.Country),
+            "Type" => sortAscending ? query.OrderBy(t => t.Type) : query.OrderByDescending(t => t.Type),
+            "Score" => sortAscending ? query.OrderBy(t => t.Score) : query.OrderByDescending(t => t.Score),
+            _ => sortAscending ? query.OrderBy(t => t.Date) : query.OrderByDescending(t => t.Date),
+        };
+
+        filteredTrips = query.ToList();
+        totalPages = Math.Max(1, (int)Math.Ceiling(filteredTrips.Count / (double)PageSize));
+        currentPage = Math.Min(currentPage, totalPages);
+        UpdatePage();
+    }
+
+    private void UpdatePage()
+    {
+        pagedTrips = filteredTrips.Skip((currentPage - 1) * PageSize).Take(PageSize).ToList();
+    }
+
+    private void SortBy(string column)
+    {
+        if (sortColumn == column)
+            sortAscending = !sortAscending;
+        else
+        {
+            sortColumn = column;
+            sortAscending = true;
+        }
+        ApplyFilters();
+    }
+
+    private void ChangePage(int page)
+    {
+        if (page < 1 || page > totalPages) return;
+        currentPage = page;
+        UpdatePage();
+    }
+
+    private void ConfirmDelete(Trip trip)
+    {
+        tripToDelete = trip;
+    }
+
+    private async Task DeleteTrip()
+    {
+        if (tripToDelete is null) return;
+        deleting = true;
+        try
+        {
+            var response = await Http.DeleteAsync($"api/trips/{tripToDelete.Id}");
+            if (response.IsSuccessStatusCode)
+            {
+                ShowToast($"'{tripToDelete.TripName}' deleted successfully.", false);
+                tripToDelete = null;
+                await LoadTrips();
+            }
+            else
+            {
+                ShowToast("Failed to delete trip.", true);
+            }
+        }
+        catch (Exception ex)
+        {
+            ShowToast($"Error: {ex.Message}", true);
+        }
+        finally
+        {
+            deleting = false;
+        }
+    }
+
+    private MarkupString SortIcon(string column)
+    {
+        if (sortColumn != column) return new MarkupString("⇅");
+        return new MarkupString(sortAscending ? "↑" : "↓");
+    }
+
+    private static string GetTypeBadgeClass(string type) => type switch
+    {
+        "City Trip" => "bg-primary",
+        "Beach" => "bg-info text-dark",
+        "Nature" => "bg-success",
+        "Cultural" => "bg-warning text-dark",
+        "Festival" => "bg-danger",
+        _ => "bg-secondary"
+    };
+
+    private static string GetStars(decimal score)
+    {
+        int full = (int)Math.Floor(score);
+        return new string('★', full) + (score - full >= 0.5m ? "½" : "");
+    }
+
+    private void ShowToast(string message, bool isError)
+    {
+        toastMessage = message;
+        toastIsError = isError;
+        toastCts?.Cancel();
+        toastCts = new System.Threading.CancellationTokenSource();
+        var token = toastCts.Token;
+        _ = Task.Delay(3500, token).ContinueWith(_ =>
+        {
+            if (!token.IsCancellationRequested)
+            {
+                toastMessage = null;
+                InvokeAsync(StateHasChanged);
+            }
+        }, TaskScheduler.Default);
+    }
+}
