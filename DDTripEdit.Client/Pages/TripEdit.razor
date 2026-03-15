@@ -1,0 +1,182 @@
+@page "/trips/add"
+@page "/trips/edit/{Id:int}"
+@inject HttpClient Http
+@inject NavigationManager Navigation
+
+<PageTitle>@(IsEdit ? "Edit Trip" : "Add Trip") - DDTripEdit</PageTitle>
+
+<div class="container mt-3" style="max-width:640px">
+    <div class="d-flex align-items-center mb-3">
+        <a href="/trips" class="btn btn-outline-secondary me-3">
+            <i class="bi bi-arrow-left"></i> Back
+        </a>
+        <h3 class="mb-0">@(IsEdit ? "Edit Trip" : "Add New Trip")</h3>
+    </div>
+
+    @if (loading)
+    {
+        <div class="text-center py-5">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    }
+    else if (loadError != null)
+    {
+        <div class="alert alert-danger">@loadError</div>
+    }
+    else
+    {
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <EditForm Model="@model" OnValidSubmit="HandleSubmit">
+                    <DataAnnotationsValidator />
+                    <ValidationSummary class="alert alert-warning" />
+
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Date <span class="text-danger">*</span></label>
+                        <InputDate class="form-control" @bind-Value="model.Date" />
+                        <ValidationMessage For="() => model.Date" class="text-danger small" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Trip Name <span class="text-danger">*</span></label>
+                        <InputText class="form-control" @bind-Value="model.TripName" placeholder="e.g. Summer in Rome" />
+                        <ValidationMessage For="() => model.TripName" class="text-danger small" />
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label fw-semibold">City <span class="text-danger">*</span></label>
+                            <InputText class="form-control" @bind-Value="model.City" placeholder="e.g. Rome" />
+                            <ValidationMessage For="() => model.City" class="text-danger small" />
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label fw-semibold">Country <span class="text-danger">*</span></label>
+                            <InputText class="form-control" @bind-Value="model.Country" placeholder="e.g. Italy" />
+                            <ValidationMessage For="() => model.Country" class="text-danger small" />
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Type <span class="text-danger">*</span></label>
+                        <InputSelect class="form-select" @bind-Value="model.Type">
+                            <option value="">— Select type —</option>
+                            @foreach (var t in tripTypes)
+                            {
+                                <option value="@t">@t</option>
+                            }
+                        </InputSelect>
+                        <ValidationMessage For="() => model.Type" class="text-danger small" />
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold">Score <span class="text-muted small">(optional, 0–5)</span></label>
+                        <InputNumber class="form-control" @bind-Value="model.Score" step="0.1" min="0" max="5" placeholder="e.g. 4.5" />
+                        <ValidationMessage For="() => model.Score" class="text-danger small" />
+                    </div>
+
+                    <div class="d-flex gap-2">
+                        <button type="submit" class="btn btn-primary" disabled="@saving">
+                            @if (saving)
+                            {
+                                <span class="spinner-border spinner-border-sm me-1"></span>
+                            }
+                            <i class="bi bi-floppy me-1"></i>
+                            @(IsEdit ? "Save Changes" : "Add Trip")
+                        </button>
+                        <a href="/trips" class="btn btn-secondary">Cancel</a>
+                    </div>
+
+                    @if (saveError != null)
+                    {
+                        <div class="alert alert-danger mt-3">@saveError</div>
+                    }
+                </EditForm>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter] public int? Id { get; set; }
+
+    private Trip model = new();
+    private bool loading;
+    private bool saving;
+    private string? loadError;
+    private string? saveError;
+
+    private bool IsEdit => Id.HasValue;
+
+    private readonly List<string> tripTypes =
+    [
+        "City Trip", "Beach", "Nature", "Cultural", "Festival",
+        "Road Trip", "Hiking", "Business", "Other"
+    ];
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (IsEdit)
+        {
+            loading = true;
+            loadError = null;
+            try
+            {
+                var trip = await Http.GetFromJsonAsync<Trip>($"api/trips/{Id}");
+                if (trip is null)
+                {
+                    loadError = $"Trip #{Id} not found.";
+                }
+                else
+                {
+                    model = trip;
+                }
+            }
+            catch (Exception ex)
+            {
+                loadError = $"Could not load trip: {ex.Message}";
+            }
+            finally
+            {
+                loading = false;
+            }
+        }
+        else
+        {
+            model = new Trip { Date = DateTime.Today };
+        }
+    }
+
+    private async Task HandleSubmit()
+    {
+        saving = true;
+        saveError = null;
+        try
+        {
+            HttpResponseMessage response;
+            if (IsEdit)
+                response = await Http.PutAsJsonAsync($"api/trips/{Id}", model);
+            else
+                response = await Http.PostAsJsonAsync("api/trips", model);
+
+            if (response.IsSuccessStatusCode)
+            {
+                Navigation.NavigateTo("/trips");
+            }
+            else
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                saveError = $"Save failed ({(int)response.StatusCode}): {content}";
+            }
+        }
+        catch (Exception ex)
+        {
+            saveError = $"Error: {ex.Message}";
+        }
+        finally
+        {
+            saving = false;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+## .NET build outputs
+bin/
+obj/
+*.user
+*.suo
+.vs/
+
+## NuGet packages
+*.nupkg
+*.snupkg
+**/packages/
+!**/packages/build/
+
+## Publish output
+publish/
+
+## IDE
+.idea/
+.vscode/
+*.DotSettings.user
+
+## OS
+.DS_Store
+Thumbs.db
+
+## Blazor WASM publish artifacts
+**/wwwroot/_framework/
